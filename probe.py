@@ -1,7 +1,14 @@
-def get_age_difference(year1, year2):
-    diff = year2 - year1
-    stroka = 'The age difference is'
-    strola1 = stroka + ' ' + str(diff)
-    return strola1
+def reverse_string(string):
+    index = len(string) - 1
+    reversed_string = ''
 
-print(get_age_difference(2001, 2018))
+    while index >= 0:
+        current_char = string[index]
+        reversed_string = reversed_string + current_char
+        # То же самое через интерполяцию
+        # reversed_string = f'{reversed_string}{current_char}'
+        index = index - 1
+
+    return reversed_string
+
+print(reverse_string('Game Of Thrones'))
