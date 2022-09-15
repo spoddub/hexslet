@@ -12,3 +12,4 @@ def count_all(items):
     for item in items:
         counters[item] = counters.get(item, 0) + 1
     return counters
+
