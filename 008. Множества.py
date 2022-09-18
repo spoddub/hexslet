@@ -20,4 +20,3 @@ def all_unique(iterator):
         if len(items) != counter:
             return False
     return True
-
